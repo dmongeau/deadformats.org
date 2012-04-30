@@ -1,5 +1,6 @@
 <?php
 
+
 function QUO($str,$encoding = "utf-8") {
 	return htmlspecialchars($str,ENT_QUOTES,$encoding);
 }

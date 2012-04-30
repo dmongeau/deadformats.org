@@ -20,11 +20,11 @@ RewriteEngine On
 
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^(www\.)?laplusgrande\.ca$ [NC]
-RewriteRule ^(.*)$ http://www.laplusgrande.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^(www\.)?deadformats\.org$ [NC]
+#RewriteRule ^(.*)$ http://www.deadformats.org/$1 [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^laplusgrande\.com$ [NC]
-RewriteRule ^(.*)$ http://www\.laplusgrande\.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^deadformats\.org$ [NC]
+RewriteRule ^(.*)$ http://www\.deadformats\.org/$1 [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule "." - [skip=100]
@@ -42,6 +42,15 @@ RewriteCond %{REQUEST_METHOD} !POST
 RewriteCond %{QUERY_STRING} !.*=.*
 RewriteCond %{DOCUMENT_ROOT}/statics/photos/_cache/$1 -f
 RewriteRule ^resizer/(.*) /statics/photos/_cache/$1 [L]
+##############
+
+##############Redirection des images en cache
+RewriteCond %{REQUEST_URI} ^/tiles/
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{DOCUMENT_ROOT}/statics/photos/_cache/tiles/$1 -f
+RewriteRule ^tiles/(.*) /statics/photos/_cache/tiles/$1 [L]
 ##############
 
 

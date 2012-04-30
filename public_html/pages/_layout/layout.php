@@ -17,41 +17,32 @@
     <?php } ?>
 	</script>
 </head>
-<body class="%{BODYCLASS}">
+<body>
     <div id="page">
-        <div id="header">
-        	<div class="inner">
-            	<h1 align="center"><a href="/">Site web</a></h1>
-                <div class="menu">
-                	%{MENU}
+		<div id="header">
+			<div id="logo"><a href="/">Dead Formats</a></div>
+			<div id="menu">
+				%{MENU}
+			</div>
+			<div id="login">
+				%{LOGIN}
+			</div>
+		</div>
+		<div id="header-bg"></div>
+		<div id="left">
+			<div class="bg"></div>
+			<div class="nav hasScrollbar">
+				%{NAV}
+			</div>
+		</div>
+		<div id="content">
+			<div id="inner">
+				%{CONTENT}
+                <div id="bottom" class="%{BOTTOMCLASS}">
+                    <div class="inner">%{BOTTOM}</div>		
                 </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div id="content">
-        	<div id="inner">
-                %{CONTENT}
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-		<div id="footer">
-			<div class="inner">
-				<ul>
-					<li><a href="/a-propos/">À propos</a></li>
-					<li><a href="/a-propos/contact.html">Contact</a></li>
-					<li><a href="/a-propos/conditions.html">Conditions d'utilisation</a></li>
-					<li><a href="/a-propos/confidentialite.html">Politique de confidentialité</a></li>
-				</ul>
-				<div class="clear"></div>
 			</div>
 		</div>
     </div>
-    
-    <script type="text/javascript">
-		Cafe.init('%{CAFEPATH}');
-	</script>
-
 </body>
 </html>

@@ -11,11 +11,14 @@ define('PATH_LAYOUTS',PATH_PAGES.'/_layout');
 define('PATH_PLUGINS',PATH_APP.'/Gregory/plugins');
 define('PATH_LIB',PATH_APP.'/lib');
 define('PATH_MODELS',PATH_APP.'/models');
+define('PATH_MEDIAS',PATH_ROOT.'/../medias');
+define('PATH_PHOTOS',PATH_ROOT.'/statics/photos');
 
 
 require PATH_APP.'/Bob/Bob.php';
 require PATH_APP.'/Gregory/Gregory.php';
 require PATH_APP.'/Kate/Kate.php';
+require PATH_LIB.'/functions.php';
 
 
 $config  = include PATH_APP.'/config.php';
@@ -60,10 +63,7 @@ include PATH_APP.'/data.php';
  *
  */
 $app->setLayout(PATH_LAYOUTS.'/layout.php');
-$app->setData('menu',$app->renderFile(PATH_LAYOUTS.'/menu.php'));
-$app->setData('title','Site web');
-$app->setData('description','Description du site web');
-$app->setData('fbappid',$app->getConfig('facebook.appId'));
+//$app->setLayout(PATH_LAYOUTS.'/layout.simple.php');
 
 /**
  *
@@ -72,11 +72,13 @@ $app->setData('fbappid',$app->getConfig('facebook.appId'));
  */
 $app->addScript('/statics/js/lib/jquery.js');
 $app->addScript('/statics/js/lib/jquery.ui.js');
-$app->addScript('/statics/js/lib/Cafe/Cafe.js');
-$app->addScript('/statics/js/app/app.js');
+$app->addScript('/statics/js/lib/jquery.tinyscrollbar.js');
+$app->addScript('/statics/js/app.js');
 $app->addStylesheet('/statics/css/jquery.ui.css');
 $app->addStylesheet('/statics/css/commons.css');
 $app->addStylesheet('/statics/css/styles.css');
+$app->addStylesheet('/statics/css/map.css');
+//$app->addStylesheet('/statics/css/styles.simple.css');
 
 
 /**

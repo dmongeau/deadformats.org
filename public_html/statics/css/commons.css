@@ -18,6 +18,7 @@ h4, h5 { margin:5px 0; }
 .fleft { float:left; }
 .fright { float:right; }
 .clear { clear:both; }
+.hide { display:none; }
 
 .nomargin { margin:0 !important; }
 
@@ -186,3 +187,15 @@ a.button-small, button.small {
 	padding:2px;
 	font-size:10px;	
 }
+
+
+
+/* Default settings for scrollbar, do not change */
+div.hasScrollbar { overflow:hidden; clear: both; }
+div.hasScrollbar .viewport { position: relative; }
+div.hasScrollbar .overview { list-style: none; left: 0; top: 0; position:absolute;	}
+div.hasScrollbar .scrollbar { position: relative; float: right; width: 7px; padding-bottom: 2px; z-index: 9995; margin-right:2px; }
+div.hasScrollbar .scrollbar .track { background-color: #eee; height: 100%; width:7px; position: relative;  -moz-border-radius: 5px; border-radius: 5px; z-index: 9996; cursor: pointer; }
+div.hasScrollbar .scrollbar .thumb { height: 20px; width: 7px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left:0px; background-color:#737373;  -moz-border-radius: 7px; border-radius: 7px; z-index: 9997; }
+div.hasScrollbar .scrollbar .thumb .end { overflow: hidden; height: 5px; width: 5px; z-index: 9998; }
+div.hasScrollbar .scrollbar.disable { display: none; }

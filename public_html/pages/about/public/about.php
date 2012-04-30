@@ -1,4 +1,4 @@
-<h2>À propos de nous</h2>
+<h2>About</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tellus vitae justo cursus feugiat. Sed nisi elit, varius sed molestie vitae, suscipit vitae turpis. Aliquam consequat condimentum turpis nec adipiscing. Proin euismod faucibus facilisis. Suspendisse non leo vitae orci malesuada sagittis eu luctus eros. Suspendisse sagittis semper ante, id feugiat magna vulputate at. Mauris eget ante elit. In hac habitasse platea dictumst. Fusce egestas hendrerit volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer odio nunc, volutpat in lacinia sit amet, eleifend quis est. Nam consequat diam at erat hendrerit hendrerit tempus dolor sagittis. Proin a purus sit amet nisi semper ullamcorper.</p>
 

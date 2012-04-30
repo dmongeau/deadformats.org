@@ -10,3 +10,6 @@
 [submodule "public_html/statics/js/lib/Cafe"]
 	path = public_html/statics/js/lib/Cafe
 	url = git@github.com:/dmongeau/Cafe.git
+[submodule "app/lib/FFMPEG"]
+	path = app/lib/FFMPEG
+	url = git@github.com:/dmongeau/FFMPEG.git

@@ -12,16 +12,16 @@ $config = array(
 	),
 	
 	'debug' => array(
-		'stats' => true
+		'stats' => false
 	),
 	
 	'db' => array(
 		'adapter' => 'pdo_mysql',
 		'config' => array(
 			'host' => 'localhost',
-			'username' => 'user',
-			'password' => 'password',
-			'dbname' => 'database'
+			'username' => 'deadformats',
+			'password' => 'YfGCNxSnzGx2hJHW',
+			'dbname' => 'deadformats'
 		)
 	),
 	
@@ -44,9 +44,17 @@ $config = array(
 	),
 	
 	'mail' => array(
-		'from' => array('Site web'=>'info@siteweb.com'),
-		'contact' => 'dev@commun.ca'
+		'from' => array('Deadformats.org'=>'info@deadformats.org'),
+		'contact' => 'dmp@ecoutez.ca'
 	
+	),
+	
+	'maps' => array(
+		'tile' => array(
+			'size' => 256,
+			'padding' => 10
+		),
+		'maxZoom' => 4
 	),
 	
 	
@@ -104,9 +112,17 @@ $config = array(
 		'cachePath' => PATH_ROOT.'/statics/photos/_cache',
 		'size' => array(
 			'thumb' => array(
-				'width' => 35,
-				'height' => 35,
+				'width' => 50,
+				'height' => 50,
 				'ratio' => true
+			),
+			'list' => array(
+				'width' => 250,
+				'height' => 200
+			),
+			'large' => array(
+				'width' => 2000,
+				'height' => 1000
 			)
 		)
 	)
